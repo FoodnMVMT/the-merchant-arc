@@ -249,17 +249,33 @@ a { color: inherit; text-decoration: none; }
 .why__metaphor svg { width: 100%; height: auto; }
 
 /* ---------- Tags ---------- */
-.tags { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }
+.tags {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  max-width: 920px;
+  margin-inline: auto;
+}
 .tags li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  width: 100%;
+  min-height: 52px;
+  text-align: center;
   background: var(--paper);
-  border: 1px solid var(--line);
+  border: 1px solid rgba(8, 16, 52, 0.14);
   border-radius: var(--radius);
-  padding: 11px 20px;
+  padding: 11px 18px;
   font-weight: 500;
   font-size: 0.92rem;
   color: var(--navy);
   transition: background .15s ease, color .15s ease, border-color .15s ease;
 }
+.tags li:nth-child(odd) { color: var(--blue-dk); border-color: var(--blue); }
+.tags li:nth-child(even) { color: var(--navy); border-color: var(--slate); }
 .tags li:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
 
 /* ---------- 5-step services (Consult/Design/Implement/Protect/Grow) ---------- */
@@ -321,11 +337,13 @@ a { color: inherit; text-decoration: none; }
   .why__metaphor { order: -1; max-width: 360px; }
   .steps5 { grid-template-columns: repeat(2, 1fr); border-left: none; }
   .step5 { border: 1px solid var(--line); padding: 24px 22px; margin: -1px 0 0 -1px; }
+  .tags { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .nav__links a:not(.btn) { display: none; }
 }
 @media (max-width: 560px) {
   .cards--3 { grid-template-columns: 1fr; }
   .steps5 { grid-template-columns: 1fr; }
+  .tags { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .section { padding: 64px 0; }
   .hero { padding: 130px 0 80px; }
   .btn { width: 100%; }
