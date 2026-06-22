@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The Merchant Arc — Logo Concepts</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Montserrat:wght@500;600&display=swap');
+  :root{ --navy:#081034; --blue:#0066FF; --stone:#EFE7D6; --slate:#687280; }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Montserrat',sans-serif;color:var(--navy);background:#f4f1ea}
+  header{padding:42px 32px 8px;text-align:center}
+  header h1{font-family:'Cinzel',serif;font-weight:600;letter-spacing:2px;margin:0 0 6px}
+  header p{color:var(--slate);max-width:680px;margin:0 auto;font-size:14px;line-height:1.5}
+  .wrap{max-width:1080px;margin:0 auto;padding:24px 32px 80px}
+  .card{border-radius:18px;padding:36px;margin:22px 0;box-shadow:0 18px 40px -24px rgba(8,16,52,.45)}
+  .light{background:var(--stone)}
+  .dark{background:var(--navy)}
+  .row{display:flex;gap:48px;align-items:center;justify-content:center;flex-wrap:wrap}
+  .col-label{font-family:'Cinzel',serif;letter-spacing:3px;font-size:12px;color:var(--slate);text-transform:uppercase;margin:36px 0 4px}
+  .alt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .alt{border:1px solid rgba(8,16,52,.12);border-radius:16px;padding:26px;text-align:center;background:var(--stone)}
+  .alt h3{font-family:'Cinzel',serif;font-weight:500;letter-spacing:1px;font-size:14px;margin:14px 0 4px}
+  .alt p{font-size:12px;color:var(--slate);margin:0;line-height:1.45}
+  /* lockup */
+  .lockup{display:flex;align-items:center;gap:22px}
+  .lockup .mark{width:104px;height:108px;flex:none}
+  .word{font-family:'Cinzel',serif;line-height:1}
+  .word .the{display:block;font-size:14px;letter-spacing:6px;font-weight:500;opacity:.7}
+  .word .main{display:block;font-size:34px;letter-spacing:4px;font-weight:600;margin-top:4px}
+  .tag{font-family:'Montserrat',sans-serif;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;margin-top:8px;opacity:.65}
+  .ink-navy{color:var(--navy)}
+  .ink-stone{color:var(--stone)}
+  .mark-sm{width:96px;height:100px}
+</style>
+</head>
+<body>
+
+<!-- ============ shared symbols (currentColor = ink, #0066FF = accent) ============ -->
+<!-- v7: the arch regains its original navy->blue blend on the upper-right quarter (per reference image). -->
+<!-- Inside it, the rings become flowing undercurrent lines — same navy->blue blend, left to right. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+
+  <defs>
+    <linearGradient id="archBlend" gradientUnits="userSpaceOnUse" x1="50" y1="32" x2="70" y2="52">
+      <stop offset="0" stop-color="#33408a"/>
+      <stop offset="1" stop-color="#0066FF"/>
+    </linearGradient>
+    <linearGradient id="currentBlend" gradientUnits="userSpaceOnUse" x1="30" y1="0" x2="70" y2="0">
+      <stop offset="0" stop-color="#081034" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#0066FF" stop-opacity=".9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- O: Undercurrent — the arch's blue blend is restored; the rings become gently flowing current lines -->
+  <symbol id="markO" viewBox="0 0 100 104">
+    <g fill="none" stroke-linecap="round">
+      <path d="M30 92 V52 A20 20 0 0 1 50 32" stroke="currentColor" stroke-width="2.2"/>
+      <path d="M50 32 A20 20 0 0 1 70 52 V92" stroke="url(#archBlend)" stroke-width="4"/>
+      <g stroke="url(#currentBlend)" stroke-width="1.4">
+        <path d="M30 63 C33.33 59,36.67 59,40 63 C43.33 67,46.67 67,50 63 C53.33 59.5,56.67 59.5,60 63 C63.33 66.5,66.67 66.5,70 63"/>
+        <path d="M30 71 C33.33 75.5,36.67 75.5,40 71 C43.33 66.5,46.67 66.5,50 71 C53.33 74.8,56.67 74.8,60 71 C63.33 67.2,66.67 67.2,70 71"/>
+        <path d="M30 79 C33.33 75.5,36.67 75.5,40 79 C43.33 82.5,46.67 82.5,50 79 C53.33 75,56.67 75,60 79 C63.33 83,66.67 83,70 79"/>
+      </g>
+    </g>
+  </symbol>
+
+  <!-- P: Cavitation Trail — organic bubble sizes/heights, closer to a literal wake behind a fast object. -->
+  <symbol id="markP" viewBox="0 0 100 104">
+    <g fill="none" stroke-linecap="round">
+      <path d="M30 92 V52 A20 20 0 0 1 50 32" stroke="currentColor" stroke-width="2.2"/>
+      <path d="M50 32 A20 20 0 0 1 70 52 V92" stroke="url(#archBlend)" stroke-width="4"/>
+      <g>
+        <circle class="ring-shadow" cx="33.5" cy="68.5" r="6.5"/><circle class="ring-light" cx="32.5" cy="67.5" r="6.5"/>
+        <circle class="ring-shadow" cx="38" cy="74.5" r="4.6"/><circle class="ring-light" cx="37.2" cy="73.7" r="4.6"/>
+        <circle class="ring-shadow" cx="43.5" cy="66.5" r="5.2"/><circle class="ring-light" cx="42.6" cy="65.6" r="5.2"/>
+        <circle class="ring-shadow" cx="47.5" cy="73" r="3.4"/><circle class="ring-light" cx="46.9" cy="72.4" r="3.4"/>
+        <circle class="ring-shadow" cx="52" cy="68" r="3"/><circle class="ring-light" cx="51.5" cy="67.5" r="3"/>
+        <circle class="ring-shadow" cx="56" cy="72.5" r="2.1"/><circle class="ring-light" cx="55.6" cy="72.1" r="2.1"/>
+        <circle class="ring-shadow" cx="59.5" cy="68.5" r="1.7"/><circle class="ring-light" cx="59.2" cy="68.2" r="1.7"/>
+        <circle class="ring-shadow" cx="63" cy="71" r="1.1"/><circle class="ring-light" cx="62.8" cy="70.8" r="1.1"/>
+        <circle class="ring-shadow" cx="66.5" cy="69" r="0.7"/><circle class="ring-light" cx="66.4" cy="68.9" r="0.7"/>
+      </g>
+    </g>
+  </symbol>
+</svg>
+<style>
+  .ring-shadow{ stroke:#0066FF; stroke-opacity:.5; stroke-width:.9; }
+  .ring-light{ stroke:#EFE7D6; stroke-opacity:.45; stroke-width:.75; }
+  .dark .ring-shadow{ stroke-opacity:.65; }
+  .dark .ring-light{ stroke-opacity:.25; }
+</style>
+
+<header>
+  <h1>The Merchant Arc</h1>
+  <p>v7 — the arch's original navy→blue blend is back on the upper-right quarter. In O, the rings are now flowing undercurrent lines carrying that same blend, left to right.</p>
+</header>
+
+<div class="wrap">
+
+  <!-- PRIMARY lockup, light -->
+  <div class="col-label">Primary lockup — Warm Stone</div>
+  <div class="card light">
+    <div class="row">
+      <div class="lockup ink-navy">
+        <svg class="mark"><use href="#markO"/></svg>
+        <div>
+          <span class="word"><span class="the">THE</span><span class="main">MERCHANT ARC</span></span>
+          <div class="tag">Payment clarity for local merchants</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRIMARY lockup, dark -->
+  <div class="col-label">Primary lockup — Arc Navy</div>
+  <div class="card dark">
+    <div class="row">
+      <div class="lockup ink-stone" style="color:var(--stone)">
+        <svg class="mark"><use href="#markO"/></svg>
+        <div style="color:var(--stone)">
+          <span class="word"><span class="the">THE</span><span class="main">MERCHANT ARC</span></span>
+          <div class="tag">Payment clarity for local merchants</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- mark only, both grounds -->
+  <div class="col-label">Standalone mark</div>
+  <div class="card light">
+    <div class="row">
+      <svg class="mark-sm ink-navy"><use href="#markO"/></svg>
+      <svg class="mark-sm ink-navy" style="width:56px;height:58px"><use href="#markO"/></svg>
+      <svg class="mark-sm ink-navy" style="width:34px;height:36px"><use href="#markO"/></svg>
+    </div>
+  </div>
+  <div class="card dark">
+    <div class="row" style="color:var(--stone)">
+      <svg class="mark-sm" style="color:var(--stone)"><use href="#markO"/></svg>
+      <svg class="mark-sm" style="width:56px;height:58px;color:var(--stone)"><use href="#markO"/></svg>
+      <svg class="mark-sm" style="width:34px;height:36px;color:var(--stone)"><use href="#markO"/></svg>
+    </div>
+  </div>
+
+  <!-- alternates -->
+  <div class="col-label">Concept directions</div>
+  <div class="alt-grid">
+    <div class="alt">
+      <svg class="mark-sm ink-navy"><use href="#markO"/></svg>
+      <h3>O · Wake Rings</h3>
+      <p>Recommended. Evenly spaced rings shrinking left to right, like sonar pings decaying — clean, precise, calm. Holds up well even at small sizes.</p>
+    </div>
+    <div class="alt">
+      <svg class="mark-sm ink-navy"><use href="#markP"/></svg>
+      <h3>P · Cavitation Trail</h3>
+      <p>Same decay, but bubble sizes and heights vary organically — closer to a literal wake. More texture, slightly busier at small sizes.</p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

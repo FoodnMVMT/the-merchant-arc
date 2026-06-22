@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Merchant Arc — Payment Clarity for Local Merchants</title>
+  <meta name="description" content="The Merchant Arc helps local merchants review their payment processing, understand their POS setup, and make smarter decisions about fees, dual pricing, debit, and credit — starting with a no-pressure statement review." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="The Merchant Arc — Payment Clarity for Local Merchants" />
+  <meta property="og:description" content="A clearer path through merchant services. Free statement review for local businesses." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://themerchantarc.com" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Calendly popup widget -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a class="brand" href="#top" aria-label="The Merchant Arc home">
+        <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M11 43 V 24 A 13 13 0 0 1 37 24 V 43" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/>
+          <path d="M24 11 A 13 13 0 0 1 37 24" fill="none" stroke="#0066FF" stroke-width="2.4" stroke-linecap="square"/>
+        </svg>
+        <span class="brand__name">The Merchant&nbsp;Arc</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#statement">Statement Review</a>
+        <a href="#why">Why us</a>
+        <a href="#process">How it works</a>
+        <a class="btn btn--ghost btn--sm" href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ray-a-maylor/let-us-share-some-thoughts-together'});return false;">Book a review</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <svg class="hero__arc" viewBox="0 0 1100 620" preserveAspectRatio="xMidYMax meet">
+        <g fill="none">
+          <path d="M250 620 V 320 A 300 300 0 0 1 850 320 V 620" stroke="#081034" stroke-opacity="0.07" stroke-width="2"/>
+          <path d="M320 620 V 340 A 230 230 0 0 1 780 340 V 620" stroke="#081034" stroke-opacity="0.10" stroke-width="2"/>
+          <path d="M390 620 V 360 A 160 160 0 0 1 710 360 V 620" stroke="#687280" stroke-opacity="0.30" stroke-width="1.5"/>
+          <path d="M550 200 A 160 160 0 0 1 710 360" stroke="#0066FF" stroke-opacity="0.85" stroke-width="3"/>
+          <line x1="170" y1="620" x2="930" y2="620" stroke="#081034" stroke-opacity="0.18" stroke-width="1.5"/>
+        </g>
+      </svg>
+    </div>
+    <div class="container hero__inner">
+      <p class="eyebrow">Merchant services · POS · payments consulting</p>
+      <h1 class="hero__title">From processing confusion<br /><span class="accent">to payment clarity.</span></h1>
+      <p class="hero__lede">
+        The Merchant Arc helps local merchants understand what they're really paying,
+        review their POS and processor setup, and make smarter decisions about fees,
+        dual pricing, debit, and credit — without the pushy sales pitch.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ray-a-maylor/let-us-share-some-thoughts-together'});return false;">Get a free statement review</a>
+        <a class="btn btn--ghost" href="#statement">See what's included</a>
+      </div>
+      <p class="hero__trust">Built by a Visa Product Leader · ETA Certified Payments Professional (CPP)</p>
+    </div>
+  </section>
+
+  <!-- ============ PAIN POINTS ============ -->
+  <section class="section" id="pains">
+    <div class="container">
+      <h2 class="section__title">Sound familiar?</h2>
+      <p class="section__sub">Most merchants aren't overpaying on purpose — the system is just hard to read. These are the things owners tell us most.</p>
+      <div class="cards cards--3">
+        <div class="card card--quiet"><p>"I don't fully understand my processing statement."</p></div>
+        <div class="card card--quiet"><p>"I'm not sure if I'm paying too much — or what my real rate is."</p></div>
+        <div class="card card--quiet"><p>"My POS and processor are bundled and impossible to compare."</p></div>
+        <div class="card card--quiet"><p>"I want to reduce card fees but don't want to upset customers."</p></div>
+        <div class="card card--quiet"><p>"I've heard of dual pricing, but I don't know what's actually compliant."</p></div>
+        <div class="card card--quiet"><p>"I just need someone to explain this without selling me something."</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section section--alt" id="services">
+    <div class="container">
+      <h2 class="section__title">How we help</h2>
+      <p class="section__sub">Outcomes first, products second. We start by understanding your current setup — then show you the options clearly.</p>
+      <div class="cards cards--3">
+        <article class="card">
+          <span class="card__num">01</span>
+          <h3>Merchant Statement Review</h3>
+          <p>We analyze your current statement, calculate your true effective rate, and explain interchange, assessments, processor markup, and every monthly and incidental fee.</p>
+        </article>
+        <article class="card">
+          <span class="card__num">02</span>
+          <h3>POS &amp; Payments Setup Review</h3>
+          <p>We look at whether your POS and processing are bundled, whether you can switch processors or need a new POS path, and how your terminal and gateway are configured.</p>
+        </article>
+        <article class="card">
+          <span class="card__num">03</span>
+          <h3>Dual Pricing &amp; Cash Discount</h3>
+          <p>We explain dual pricing vs. cash discount, what customers see, the compliance considerations, and whether the approach actually fits your business model.</p>
+        </article>
+        <article class="card">
+          <span class="card__num">04</span>
+          <h3>Debit, Credit &amp; PIN Debit Clarity</h3>
+          <p>We break down credit, signature debit, and PIN debit — and where the cost differences live — so you know who captures the savings and how it's disclosed.</p>
+        </article>
+        <article class="card">
+          <span class="card__num">05</span>
+          <h3>Processor &amp; POS Recommendation</h3>
+          <p>We match your needs to the right platform, prioritizing transparent pricing, real support, and ownership of your customer relationship over a quick switch.</p>
+        </article>
+        <article class="card">
+          <span class="card__num">06</span>
+          <h3>Onboarding Support</h3>
+          <p>We help prepare documents, configure equipment, and coach your staff on customer-facing language — reducing the friction of any change you decide to make.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATEMENT REVIEW OFFER ============ -->
+  <section class="section offer" id="statement">
+    <div class="container offer__inner">
+      <div class="offer__copy">
+        <p class="eyebrow">The first step</p>
+        <h2 class="section__title">A free, no-pressure statement review</h2>
+        <p>You don't need another rate quote first — you need someone to explain your current statement. Send one recent processing statement and we'll show you exactly where your money is going. If there's nothing worth changing, we'll tell you that.</p>
+        <a class="btn btn--primary" href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ray-a-maylor/let-us-share-some-thoughts-together'});return false;">Request your review</a>
+      </div>
+      <div class="offer__list">
+        <h3>What we'll identify</h3>
+        <ul class="checklist">
+          <li>Your true <strong>effective rate</strong> (total fees ÷ total card volume)</li>
+          <li>Monthly card volume, transaction count &amp; average ticket</li>
+          <li>Credit vs. debit card mix</li>
+          <li>Interchange, dues &amp; assessments vs. processor markup</li>
+          <li>PCI, gateway, batch, chargeback &amp; equipment fees</li>
+          <li>Whether dual pricing or a different setup could help</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY THE MERCHANT ARC ============ -->
+  <section class="section section--dark" id="why">
+    <div class="container why">
+      <div class="why__copy">
+        <h2 class="section__title">Why The Merchant Arc</h2>
+        <p class="why__lede">Most merchant services calls are a rate pitch. This isn't that.</p>
+        <p>The Merchant Arc was built by a <strong>Visa Product Leader</strong> — with work spanning tokenization, loyalty, and merchant-facing data products — and backed by the <strong>ETA Certified Payments Professional (CPP)</strong> credential. That means you get someone who can explain complex payment topics in plain English and put your interests first.</p>
+        <ul class="badges">
+          <li>Visa Product Leader</li>
+          <li>ETA CPP certified</li>
+          <li>Consultative, not transactional</li>
+          <li>Focused on local merchants</li>
+        </ul>
+      </div>
+      <div class="why__metaphor" aria-hidden="true">
+        <svg viewBox="0 0 320 270">
+          <path d="M20 230 V 150 A 110 110 0 0 1 240 150 V 230" fill="none" stroke="#687280" stroke-width="1.3" stroke-dasharray="2 8"/>
+          <path d="M60 230 V 170 A 70 70 0 0 1 200 170 V 230" fill="none" stroke="#3a4a78" stroke-width="1.3"/>
+          <path d="M130 100 A 70 70 0 0 1 200 170" fill="none" stroke="#0066FF" stroke-width="3"/>
+          <line x1="6" y1="230" x2="300" y2="230" stroke="#3a4a78" stroke-width="1.3"/>
+          <text x="6" y="252" fill="#8a93a6" font-size="11" font-family="Montserrat, sans-serif" letter-spacing="2">CONFUSION</text>
+          <text x="232" y="252" fill="#ffffff" font-size="11" font-family="Montserrat, sans-serif" letter-spacing="2">CLARITY</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TARGET INDUSTRIES ============ -->
+  <section class="section" id="industries">
+    <div class="container">
+      <h2 class="section__title">Who we work with</h2>
+      <p class="section__sub">Independent, local businesses where the owner or manager actually makes the call.</p>
+      <ul class="tags">
+        <li>Wellness studios</li>
+        <li>Fitness businesses</li>
+        <li>Massage</li>
+        <li>Yoga studios</li>
+        <li>Running stores</li>
+        <li>Tennis &amp; racquet shops</li>
+        <li>Local retail</li>
+        <li>Neighborhood service businesses</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section section--alt" id="process">
+    <div class="container">
+      <h2 class="section__title">A simple, clear process</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="step__num">1</span>
+          <h3>Share one statement</h3>
+          <p>Send a recent processing statement. No commitment, no switch required.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">2</span>
+          <h3>Get a plain-English review</h3>
+          <p>We summarize your effective rate, fees, and card mix — and what they actually mean.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">3</span>
+          <h3>See your options clearly</h3>
+          <p>If there's a better setup, we show it. If not, we'll tell you honestly.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">4</span>
+          <h3>Decide on your terms</h3>
+          <p>You choose what's next — and we handle the onboarding if you move forward.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / CTA ============ -->
+  <section class="section cta" id="contact">
+    <div class="container cta__inner">
+      <h2 class="cta__title">Know what you pay.<br />Choose how you move.</h2>
+      <p class="cta__sub">Start with a free, no-pressure statement review.</p>
+      <div class="cta__btns">
+        <a class="btn btn--primary btn--lg" href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ray-a-maylor/let-us-share-some-thoughts-together'});return false;">Book a review</a>
+        <a class="btn btn--ghost btn--lg cta__email" href="mailto:admin@themerchantarc.com?subject=Free%20Statement%20Review">Or email us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M11 43 V 24 A 13 13 0 0 1 37 24 V 43" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/>
+          <path d="M24 11 A 13 13 0 0 1 37 24" fill="none" stroke="#0066FF" stroke-width="2.4" stroke-linecap="square"/>
+        </svg>
+        <span>The Merchant Arc</span>
+      </div>
+      <p class="footer__tag">Payment clarity for local merchants.</p>
+      <p class="footer__legal">
+        <a href="mailto:admin@themerchantarc.com">admin@themerchantarc.com</a><br />
+        © <span id="year"></span> The Merchant Arc
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
