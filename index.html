@@ -222,6 +222,10 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelector('.brand').addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   </script>
 </body>
 </html>
